@@ -1,0 +1,52 @@
+
+
+
+@media (min-width: 1000px) {
+
+	/******************** Titre ******************/
+
+ h1 {
+    font-size: 2.7em;
+	}
+
+  .bloc_reservation p {
+    font-size: 1.3em;
+	}
+	/******************** Main disposition ******************/
+	
+	body{
+		 max-width: 1300px;
+		 margin: auto;
+	}  
+
+  .restaurants{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+ 
+
+  /******************** Card ******************/
+  .contour-card{
+	width: 45%;
+	}
+	.card{
+		height: 350px;
+	}
+	.bloc_fonctionnement ul {
+    
+    flex-direction: row;
+    justify-content: center;
+	}
+ /******************** Icon ******************/
+
+	li.btn.button_fonction:before {
+    position: relative;
+    left: -5em;
+	}
+}
+
+
+
