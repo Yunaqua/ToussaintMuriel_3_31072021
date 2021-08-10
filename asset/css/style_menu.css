@@ -3,28 +3,52 @@
 h1{
   text-align: center;
 }
-
+h2{
+  font-family: "Shrikhand", serif; 
+}
 h3 {
     padding-left: 15px;
 }
-
+.menu h3:after{
+      content: "";
+    display: block;
+    width: 40px;
+    background-color: #99E2D0;
+    height: 2px;
+    margin-top: 5px;
+}
 
 /******************** Main disposition ******************/
+header{
+  text-align: center;
+}
+
 
 body{
   text-align: left;
   margin: auto;
-  text-indent: 20px;
 
 }
 footer{
    color: white;
-
+   background-color: #222
 }
 
-section {
+.description {
+    padding: 2em 0;
+    border-radius: 20px 20px 0 0;
     background-color: lightgray;
+    border: 2px solid black;
+    z-index: 1;
+    position: absolute;
+    bottom: -5em;
+    width: 100%;
+    text-align: center;
 }
+
+#bloc--menus {
+    background-color: lightgray;
+} 
 
 /********************  Icon ********************/
 
@@ -37,6 +61,8 @@ section {
 .list-footer div i {
     padding-right: 10px;
 }
+
+
 /******************** List ******************/
 
 .fonction{
@@ -54,14 +80,18 @@ section {
 }
 
 .list-menu {
-    background-color: white;
-    border-radius: 20px;
+   background-color: white;
+    border-radius: 10px;
     margin: 20px;
-}
+    padding: 10px;}
 
 .list-footer{
     
     display: inline;
+}
+
+footer li {
+    padding-bottom: 5px;
 }
 
 .list-footer div {
@@ -70,17 +100,17 @@ section {
     padding: 5px 0;
 }
 
+
+
 /****************** Card ******************/
 
 .card {
-  /* Add shadows to create the "card" effect */
-
     background-size: cover!important;
-    /* width: 120px; */
     height: 280px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     transition: opacity 0.25s ease-in-out;
+    margin-bottom: 5em;
 }
 
 
@@ -88,6 +118,11 @@ section {
 
 .card img {
   border-radius: 10px 10px 0 0;
+}
+
+footer img{
+  width: 20%;
+  padding-bottom: 1.5em;
 }
 
 
