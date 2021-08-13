@@ -1,0 +1,16 @@
+{
+  "name": "css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass" : "sass --watch ../sass/style.scss:../css/index.css && sass --watch ../sass/pages_menu.scss:../css/stylemenu.css"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.37.5"
+  }
+}

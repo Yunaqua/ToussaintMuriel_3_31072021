@@ -1,0 +1,228 @@
+@charset "UTF-8";
+/******************** Variables ******************/
+h2, footer {
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.7em;
+}
+
+h2 {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+footer h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 2em;
+}
+
+.bloc_fonctionnement h2 {
+  padding: 1em 1em;
+}
+
+h3 {
+  padding-left: 15px;
+  font-size: 35px;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/******************** Bouton ******************/
+.btn:hover {
+  cursor: pointer;
+}
+
+span.button_explorer {
+  background: linear-gradient(180deg, #ef74da, #a15adc);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 35px;
+  font-size: 25px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 3em;
+}
+
+footer h2 {
+  font-family: "Shrikhand", serif;
+  font-size: 2em;
+}
+
+h3 {
+  padding-left: 15px;
+}
+
+.menu h3:after {
+  content: "";
+  display: block;
+  width: 40px;
+  background-color: #99E2D0;
+  height: 2px;
+  margin-top: 5px;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+/******************** Main disposition ******************/
+header {
+  text-align: center;
+}
+
+main {
+  background-color: main color-primary;
+}
+
+body {
+  text-align: left;
+  margin: auto;
+}
+
+footer {
+  color: white;
+  background-color: #222;
+  padding: 3em;
+}
+
+article {
+  padding: 3em 0;
+}
+
+.description {
+  padding: 2em 0;
+  border-radius: 45px 45px 0 0;
+  background-color: .description color-primary;
+  z-index: 1;
+  position: absolute;
+  bottom: -5em;
+  width: 100%;
+  text-align: center;
+}
+
+#bloc--menus {
+  background-color: #bloc--menus color-primary;
+}
+
+.bloc_reservation {
+  text-align: center;
+  padding: 4em;
+  padding-bottom: 6em;
+}
+
+/********************  Icon ********************/
+.list_icon i {
+  height: 30px;
+  width: 30px;
+  line-height: inherit;
+  /* padding-right: 10px; */
+}
+
+.list-footer div i {
+  padding-right: 2em;
+  height: 20px;
+  width: 20px;
+  font-size: 20px;
+}
+
+header a:before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 1em;
+  vertical-align: middle;
+  font-weight: 900;
+  content: "";
+}
+
+.description h2:after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  padding: 0 1em;
+}
+
+/******************** List ******************/
+.list-menu {
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 15px;
+}
+.list-menu :hover {
+  background-color: #f5edff;
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.list-footer {
+  display: inline;
+  list-style-type: none;
+}
+
+footer li {
+  padding-bottom: 5px;
+}
+
+.list-footer div {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/****************** Card ******************/
+.card {
+  background-size: cover !important;
+  height: 450px;
+  object-fit: cover;
+  transition: opacity 0.25s ease-in-out;
+  margin-bottom: 5em;
+}
+.card img {
+  border-radius: 10px 10px 0 0;
+}
+
+/******************** Conteneur ******************/
+.contour-card {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 5px 10px 10px #aaa;
+  color: black;
+  font-size: 14px;
+  text-align: left;
+  margin: 20px;
+}
+.contour-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 5px 0;
+}
+
+/******************** Bouton ******************/
+.btn:hover {
+  cursor: pointer;
+}
+
+span.button_explorer {
+  background: linear-gradient(180deg, #ef74da, #a15adc);
+  color: white;
+  padding: 20px 30px;
+  border-radius: 35px;
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=stylemenu.css.map */
