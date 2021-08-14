@@ -1,5 +1,18 @@
 @charset "UTF-8";
 /******************** Variables ******************/
+/******************** Mixins ******************/
+/*@mixin blue-border {
+    border: solid 5px #0c2461;
+  } */
+/******************** Variables ******************/
+/******************** Mixins ******************/
+/*@mixin blue-border {
+    border: solid 5px #0c2461;
+  } */
+body {
+  font-family: "Roboto", serif;
+}
+
 h2, footer {
   text-align: left;
 }
@@ -47,13 +60,21 @@ span.button_explorer {
   font-size: 25px;
 }
 
+.fav-btn, .prix-btn {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 4em;
+}
+
 h1 {
   text-align: center;
 }
 
 h2 {
   font-family: "Shrikhand", serif;
-  font-size: 3em;
+  font-size: 4em;
 }
 
 footer h2 {
@@ -84,7 +105,7 @@ header {
 }
 
 main {
-  background-color: main color-primary;
+  background-color: #f6f6f6;
 }
 
 body {
@@ -102,19 +123,31 @@ article {
   padding: 3em 0;
 }
 
-.description {
+.titremenu {
+  display: flex;
   padding: 2em 0;
   border-radius: 45px 45px 0 0;
-  background-color: .description color-primary;
+  background-color: #f6f6f6;
   z-index: 1;
   position: absolute;
   bottom: -5em;
   width: 100%;
   text-align: center;
+  align-items: center;
+}
+.titremenu h2 {
+  text-align: left;
+  text-indent: 1em;
+}
+.titremenu:after {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  padding: 0 2em;
+  font-size: 3em;
 }
 
 #bloc--menus {
-  background-color: #bloc--menus color-primary;
+  background-color: #f6f6f6;
 }
 
 .bloc_reservation {
@@ -147,18 +180,17 @@ header a:before {
   content: "";
 }
 
-.description h2:after {
-  font-family: "Font Awesome 5 Free";
-  content: "";
-  padding: 0 1em;
-}
-
 /******************** List ******************/
 .list-menu {
+  display: flex;
   background-color: white;
   border-radius: 10px;
   margin: 20px;
   padding: 15px;
+  justify-content: space-evenly;
+}
+.list-menu--nommenu {
+  width: 80%;
 }
 .list-menu :hover {
   background-color: #f5edff;

@@ -1,6 +1,14 @@
 @charset "UTF-8";
 /******************** Variables ******************/
+/******************** Mixins ******************/
+/*@mixin blue-border {
+    border: solid 5px #0c2461;
+  } */
 /******************** Variables ******************/
+/******************** Mixins ******************/
+/*@mixin blue-border {
+    border: solid 5px #0c2461;
+  } */
 body {
   font-family: "Roboto", serif;
 }
@@ -50,6 +58,14 @@ span.button_explorer {
   padding: 20px 30px;
   border-radius: 35px;
   font-size: 25px;
+}
+
+.fav-btn, .prix-btn {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 4em;
 }
 
 /******************** Main disposition ******************/
@@ -207,6 +223,14 @@ li.btn.button_fonction:nth-child(3):before {
 
 .description {
   padding: 10px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.description--nommenu {
+  width: 80%;
 }
 
 /******************** Images ******************/
@@ -218,14 +242,6 @@ li.btn.button_fonction:nth-child(3):before {
   color: #008766;
   padding-left: 20px;
   padding-right: 20px;
-}
-
-.fav-btn {
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items: flex-end;
-  font-size: 4em;
 }
 
 /******************** Conteneur ******************/

@@ -7,7 +7,7 @@ h1{
   }
   h2{
     font-family: "Shrikhand", serif; 
-    font-size: 3em;
+    font-size: 4em;
   }
   footer h2{
       font-family: "Shrikhand", serif; 
@@ -51,16 +51,32 @@ h1{
       padding: 3em 0;
   }
   
-  .description {
-      padding: 2em 0;
-      border-radius: 45px 45px 0 0;
-      background-color: $color-primaryback;
-      z-index: 1;
-      position: absolute;
-      bottom: -5em;
-      width: 100%;
-      text-align: center;
-  }
+  .titremenu {
+    display: flex;
+    padding: 2em 0;
+    border-radius: 45px 45px 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
+    position: absolute;
+    bottom: -5em;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    
+      h2{
+        text-align: left;
+      text-indent: 1em;
+      }
+      
+  
+      &:after {
+          font-family: "Font Awesome 5 Free";
+          content: "\f004";
+          padding: 0 2em;
+          font-size: 3em;
+      }
+  
+}
   
   #bloc--menus {
       background-color: $color-primaryback;
@@ -96,20 +112,20 @@ h1{
       content: "\f060";
   }
   
-  .description h2:after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f004";
-      padding: 0 1em;
-  }
   
   /******************** List ******************/
   
   
   .list-menu {
-     background-color: white;
-      border-radius: 10px;
-      margin: 20px;
-      padding: 15px;
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    justify-content: space-evenly;
+    &--nommenu {
+      width: 80%;
+    }
       :hover {
         background-color:  #f5edff;
         cursor: pointer;
