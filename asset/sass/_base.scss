@@ -1,3 +1,8 @@
+@import "variables";
+
+body{
+   font-family:$font-secondaire;
+   }
 h2, footer{
     text-align: left;
   }
@@ -15,7 +20,7 @@ h2, footer{
   }
   
   footer h2{
-     font-family: "Shrikhand", serif; 
+     font-family:$font-principale; 
      font-size: 2em;
   }
   .bloc_fonctionnement h2 {

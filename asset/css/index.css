@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /******************** Variables ******************/
+/******************** Variables ******************/
+body {
+  font-family: "Roboto", serif;
+}
+
 h2, footer {
   text-align: left;
 }
