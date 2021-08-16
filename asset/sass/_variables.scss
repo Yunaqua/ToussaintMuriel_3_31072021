@@ -15,3 +15,10 @@ $font-secondaire: "Roboto", serif;
 /*@mixin blue-border {
     border: solid 5px #0c2461;
   } */
+
+  .btn_menu_info {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+  }
