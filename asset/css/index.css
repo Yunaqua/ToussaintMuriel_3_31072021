@@ -10,17 +10,6 @@
   align-items: flex-end;
 }
 
-/******************** Variables ******************/
-/******************** Mixins ******************/
-/*@mixin blue-border {
-    border: solid 5px #0c2461;
-  } */
-.btn_menu_info, .prix-btn, .fav-btn {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
-
 body {
   font-family: "Roboto", serif;
 }
@@ -65,7 +54,7 @@ h4 {
 }
 
 span.button_explorer {
-  background: linear-gradient(180deg, #ef74da, #a15adc);
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
   padding: 20px 30px;
   border-radius: 35px;
