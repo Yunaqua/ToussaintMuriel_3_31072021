@@ -1,6 +1,7 @@
 @import "variables";
 @import "base";
 @import "buttons";
+@import "../sass/keyframes";
 
 
 /******************** Main disposition ******************/
@@ -34,9 +35,6 @@ body{
     padding: 5em 3em;
 }
 
-.restaurants {
-    
-}
 
 div {
     padding: 10px 0;
@@ -59,7 +57,7 @@ footer{
   width: 45px;
   /* line-height: inherit; */
   margin-right: 1em;
-  /* padding-right: 10px; */
+  @include appear;
 }
 .list-footer div i {
   padding-right: 2em;
@@ -99,7 +97,7 @@ content: "\f004";
   padding-left: 4em;
   display: inline-flex;
   align-items: center;
-
+  @include appear;
    &:hover{
   background-color: #f5edff;
   }
@@ -109,6 +107,7 @@ content: "\f004";
   display: flex;
   align-items: center;
   font-size: 45px;
+  @include appear;
 }
 
 .list-footer{
@@ -220,13 +219,12 @@ padding: 10px 20px ;
   margin: 2rem auto;
   padding: 0px;
   position: relative;
-
+  animation: apparition 1s ease-out;
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
+  
 }
-
-
 
 /* Add some padding inside the card container */
 .container {

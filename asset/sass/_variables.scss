@@ -15,7 +15,10 @@ $font-secondaire: "Roboto", serif;
 /*@mixin blue-border {
     border: solid 5px #0c2461;
   } */
-
+@mixin appear {
+  animation: apparition 1.5s ease-out;
+}
+  
   .btn_menu_info {
     display: flex;
     justify-content: center;
