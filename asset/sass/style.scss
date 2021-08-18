@@ -55,8 +55,8 @@ footer{
 /********************  Icon ********************/
 
 .list_icon i {
-  height: 30px;
-  width: 30px;
+  height: 45px;
+  width: 45px;
   /* line-height: inherit; */
   margin-right: 1em;
   /* padding-right: 10px; */
@@ -79,7 +79,7 @@ footer{
 
 
 .button_fonction .list_icon i:hover{
-color: #9356dc;
+color: $color-primary;
 
 }
 
@@ -95,12 +95,12 @@ content: "\f004";
   background-color: $color-primaryback;
   border-radius: 30px;
   margin: 10px;
-  padding: 20px;
+  padding: 40px;
   padding-left: 4em;
   display: inline-flex;
   align-items: center;
 
-  :hover{
+   &:hover{
   background-color: #f5edff;
   }
 }
@@ -108,7 +108,7 @@ content: "\f004";
 .list_icon {
   display: flex;
   align-items: center;
-  font-size: 30px;
+  font-size: 45px;
 }
 
 .list-footer{
@@ -124,7 +124,13 @@ content: "\f004";
 
 footer li {
   padding-bottom: 5px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(1.02);
+  }
 }
+
 
 
 .bloc_fonctionnement ul{
@@ -140,7 +146,7 @@ li.btn.button_fonction:before {
   height: 40px;
   display: block;
   color: white;
-  background-color: #9356dc;
+  background-color: $color-primary;
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
@@ -195,8 +201,7 @@ top: 20px;
 right: 20px;
 background-color: #99e2d0;
 color: #008766;
-padding-left: 20px;
-padding-right: 20px;
+padding: 10px 20px ;
 }
 
 
@@ -216,7 +221,7 @@ padding-right: 20px;
   padding: 0px;
   position: relative;
 
-  :hover {
+  &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
 }

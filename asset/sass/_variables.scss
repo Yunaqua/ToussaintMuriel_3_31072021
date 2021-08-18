@@ -22,3 +22,11 @@ $font-secondaire: "Roboto", serif;
     align-items: flex-end;
    
   }
+
+  .text_hide{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  

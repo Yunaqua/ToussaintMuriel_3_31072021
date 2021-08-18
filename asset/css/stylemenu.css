@@ -10,6 +10,12 @@
   align-items: flex-end;
 }
 
+.text_hide, .list-menu p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 body {
   font-family: "Roboto", serif;
 }
@@ -57,8 +63,8 @@ span.button_explorer {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
   padding: 20px 30px;
-  border-radius: 35px;
-  font-size: 25px;
+  border-radius: 50px;
+  font-size: 35px;
 }
 
 .fav-btn {
@@ -90,7 +96,7 @@ h3 {
   /* type de menu*/
 }
 
-.menu h3:after {
+article h3:after {
   content: "";
   display: block;
   width: 2em;
@@ -146,8 +152,19 @@ article {
   padding: 3em 0;
 }
 
+@media (min-width: 1024px) {
+  article {
+    min-width: 340px;
+  }
+
+  .bloc--menus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .titremenu {
   display: flex;
+  justify-content: space-between;
   padding-top: 4em;
   border-radius: 80px 80px 0 0;
   background-color: #f6f6f6;
@@ -242,6 +259,7 @@ footer li {
 footer li:hover {
   cursor: pointer;
   text-decoration: underline;
+  transform: scale(1.02);
 }
 
 /****************** Card ******************/
@@ -251,6 +269,7 @@ footer li:hover {
   object-fit: cover;
   transition: opacity 0.25s ease-in-out;
   margin-bottom: 6em;
+  position: relative;
 }
 .card img {
   border-radius: 10px 10px 0 0;

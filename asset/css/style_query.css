@@ -15,7 +15,8 @@
 	/******************** Main disposition ******************/
 	
 	body{
-		 max-width: 1300px;
+		 /*max-width: 1300px;*/
+     padding:2em;
 		 margin: auto;
 	}  
 
@@ -46,12 +47,15 @@
     position: relative;
     left: -5em;
 	}
+
+
+.list-footer {
+  display: flex;
+  justify-content: space-between;
 }
-
-
 
 .bloc--menus {
     background-color: #f6f6f6;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+
 }
