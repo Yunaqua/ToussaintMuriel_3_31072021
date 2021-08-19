@@ -21,11 +21,16 @@ span.button_explorer {
 
   .prix-btn {
     font-size: 1em;
-    font-weight:bold;
     @extend .btn_menu_info;
+      span{
+        font-size: 1em;
+        font-weight: bold;
+      }
   }
 
-  .list-menu:hover{
+
+  
+  .list-menu:active{
     .reserv-btn{
       background-color: $color-tertiaire;
       width: 25%;
