@@ -2,6 +2,8 @@
 
 .btn:hover{
     cursor: pointer;
+    @include black-shadow;
+    
   }
   
 span.button_explorer {

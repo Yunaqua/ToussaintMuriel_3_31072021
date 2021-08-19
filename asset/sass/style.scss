@@ -226,9 +226,9 @@ padding: 10px 20px ;
   margin: 2rem auto;
   padding: 0px;
   position: relative;
-  animation: apparition 2s ease-out;
+  
   &:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    @include black-shadow($color-primary);
     }
   
 }
@@ -236,4 +236,20 @@ padding: 10px 20px ;
 /* Add some padding inside the card container */
 .container {
 padding: 5px 0;
+}
+.fa-w-16{
+  cursor:pointer;
+  width: 40px;
+}
+input[type=checkbox]:checked + label {
+  .heart{
+    animation: heartchange 1.5s ease ;
+    fill:$color-secondary;
+  }
+  
+}
+.heart{
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
 }

@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /******************** Variables ******************/
 /******************** Mixins ******************/
-/*@mixin blue-border {
-    border: solid 5px #0c2461;
-  } */
 .btn_menu_info, .prix-btn, .fav-btn {
   display: flex;
   width: 100%;
@@ -34,6 +31,7 @@ h1 {
 h2 {
   font-size: 4em;
   font-weight: bold;
+  padding: 0 1em;
 }
 
 footer h2 {
@@ -58,6 +56,8 @@ h4 {
 /******************** Bouton ******************/
 .btn:hover {
   cursor: pointer;
+  box-shadow: 5px 0.2em 0.8em #dcdcdc;
+  transform: scale(1.02);
 }
 
 span.button_explorer {
@@ -210,6 +210,33 @@ span.button_explorer {
     transform: rotate(-2.5deg);
   }
 }
+@keyframes heartchange {
+  0%, 10% {
+    opacity: 0.5;
+    fill: white;
+  }
+  45% {
+    fill: #9356DC;
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+    fill: red;
+  }
+  100% {
+    fill: #FF79DA;
+  }
+}
+/* @keyframes heartchange {
+   from{
+     opacity: 0;
+     fill: $color-primary;
+   }
+   to{
+     opacity: 1;
+     fill:$color-secondary;
+   }
+ } */
 /******************** Main disposition ******************/
 body {
   text-align: center;
@@ -408,15 +435,31 @@ li.btn.button_fonction:nth-child(3):before {
   margin: 2rem auto;
   padding: 0px;
   position: relative;
-  animation: apparition 2s ease-out;
 }
 .contour-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 0.2em 0.8em #9356DC;
+  transform: scale(1.02);
 }
 
 /* Add some padding inside the card container */
 .container {
   padding: 5px 0;
+}
+
+.fa-w-16 {
+  cursor: pointer;
+  width: 40px;
+}
+
+input[type=checkbox]:checked + label .heart {
+  animation: heartchange 1.5s ease;
+  fill: #FF79DA;
+}
+
+.heart {
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
 }
 
 /*# sourceMappingURL=index.css.map */

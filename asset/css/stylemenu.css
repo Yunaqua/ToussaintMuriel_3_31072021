@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /******************** Variables ******************/
 /******************** Mixins ******************/
-/*@mixin blue-border {
-    border: solid 5px #0c2461;
-  } */
 .btn_menu_info, .prix-btn, .fav-btn {
   display: flex;
   width: 100%;
@@ -34,6 +31,7 @@ h1 {
 h2 {
   font-size: 4em;
   font-weight: bold;
+  padding: 0 1em;
 }
 
 footer h2 {
@@ -58,6 +56,8 @@ h4 {
 /******************** Bouton ******************/
 .btn:hover {
   cursor: pointer;
+  box-shadow: 5px 0.2em 0.8em #dcdcdc;
+  transform: scale(1.02);
 }
 
 span.button_explorer {
@@ -210,6 +210,33 @@ span.button_explorer {
     transform: rotate(-2.5deg);
   }
 }
+@keyframes heartchange {
+  0%, 10% {
+    opacity: 0.5;
+    fill: white;
+  }
+  45% {
+    fill: #9356DC;
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 1;
+    fill: red;
+  }
+  100% {
+    fill: #FF79DA;
+  }
+}
+/* @keyframes heartchange {
+   from{
+     opacity: 0;
+     fill: $color-primary;
+   }
+   to{
+     opacity: 1;
+     fill:$color-secondary;
+   }
+ } */
 html, body {
   height: 100%;
   min-height: 100%;
@@ -365,7 +392,6 @@ header a:before {
   display: flex;
   background-color: white;
   border-radius: 25px;
-  box-shadow: 5px 0.2em 0.8em #dcdcdc;
   margin: 20px;
   padding: 15px;
   justify-content: space-between;
@@ -373,6 +399,8 @@ header a:before {
   flex-direction: row;
   transition: transform 400ms;
   align-items: center;
+  box-shadow: 5px 0.2em 0.8em #dcdcdc;
+  transform: scale(1.02);
   animation: apparition 0.5s ease-out;
   /*&:active {
     background-image: linear-gradient(to right, rgba(0,0,0,0) 80%, $color-tertiaire 20%);

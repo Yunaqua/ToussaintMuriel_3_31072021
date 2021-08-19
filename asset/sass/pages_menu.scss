@@ -157,7 +157,6 @@ h1{
     display: flex;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 5px 0.2em 0.8em #dcdcdc;
     margin: 20px;
     padding: 15px;
     justify-content: space-between;
@@ -165,6 +164,7 @@ h1{
     flex-direction: row;
     transition: transform 400ms;
     align-items: center;
+   @include black-shadow;
     animation: apparition 0.5s ease-out;
     p{
       font-size: 2em;

@@ -12,9 +12,11 @@ $font-secondaire: "Roboto", serif;
 
 /******************** Mixins ******************/
 
-/*@mixin blue-border {
-    border: solid 5px #0c2461;
-  } */
+@mixin black-shadow ($color:#dcdcdc) {
+    box-shadow: 5px 0.2em 0.8em $color;
+    transform: scale(1.02);
+  } 
+
 @mixin appear {
   animation: apparition 1.5s ease-out;
 }
