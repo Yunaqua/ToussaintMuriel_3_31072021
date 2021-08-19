@@ -70,6 +70,7 @@ h1{
   
   article {
       padding: 3em 0;
+      animation: apparition 2s ease-out;
   }
   @media (min-width:1024px){
     article {
@@ -151,11 +152,13 @@ h1{
     display: flex;
     background-color: white;
     border-radius: 25px;
-    box-shadow: 5px .2em 0.8em #dcdcdc;
+    box-shadow: 5px 0.2em 0.8em #dcdcdc;
     margin: 20px;
     padding: 15px;
     justify-content: space-evenly;
     transition: transform 400ms;
+    align-items: center;
+    animation: apparition 0.5s ease-out;
     p{
       font-size:2em;
       @extend .text_hide;
@@ -168,6 +171,15 @@ h1{
     &--nommenu {
       width: 80%;
     }
+    /*&:active {
+      background-image: linear-gradient(to right, rgba(0,0,0,0) 80%, $color-tertiaire 20%);
+      transform-origin: right;
+      transform: scaleX(0.2);
+      transition: background-image 1000ms;
+      
+      
+    } */
+    
       
     }
   

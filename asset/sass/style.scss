@@ -82,11 +82,17 @@ color: $color-primary;
 }
 
 .fav-heart:before {
-font-family: "Font Awesome 5 Free";
-content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  content: "\f004";
+    
 
 }
+.fav-heart:hover {
 
+      animation: .5s linear burst;
+    
+  }
+  
 /******************** List ******************/
 
 .button_fonction{
@@ -188,6 +194,7 @@ content: "3";
   &--nommenu {
     width: 80%;
   }
+  
 }
 
 /******************** Images ******************/
@@ -219,7 +226,7 @@ padding: 10px 20px ;
   margin: 2rem auto;
   padding: 0px;
   position: relative;
-  animation: apparition 1s ease-out;
+  animation: apparition 2s ease-out;
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
