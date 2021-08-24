@@ -230,26 +230,15 @@ padding: 10px 20px ;
   &:hover {
     @include black-shadow($color-primary);
     }
-  
 }
+
 
 /* Add some padding inside the card container */
 .container {
 padding: 5px 0;
 }
-.fa-w-16{
-  cursor:pointer;
-  width: 40px;
-}
-input[type=checkbox]:checked + label {
-  .heart{
-    animation: heartchange 1.5s ease ;
-    fill:$color-secondary;
-  }
-  
-}
-.heart{
-  fill: white;
-  stroke: black;
-  stroke-width: 25px;
-}
+
+@include heart-size ($width:70px);
+
+
+

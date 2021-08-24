@@ -34,5 +34,10 @@ $font-secondaire: "Roboto", serif;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
-  
+  @mixin heart-size ($width:40px) {
+    
+    .fa-w-16{
+      cursor:pointer;
+      width: $width;
+    }
+  } 

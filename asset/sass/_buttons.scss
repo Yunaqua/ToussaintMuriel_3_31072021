@@ -32,7 +32,7 @@ span.button_explorer {
 
 
   
-  .list-menu:active{
+  .list-menu:hover{
     .reserv-btn{
       background-color: $color-tertiaire;
       width: 25%;
@@ -44,9 +44,9 @@ span.button_explorer {
       right: -100px;
       position: absolute;
       @extend .slide-left;
-      }
-      
-      .fa-check-circle{
+
+      &--icon{
+        
         background-color: $color-tertiaire;
         width: 15%; 
         border-radius: 50%;
@@ -55,7 +55,18 @@ span.button_explorer {
         width: 80px;
         color:white;
         @extend .rotate-center;
+        &:before{
+          content: "\f058";
+        font-family: "Font Awesome 5 Free";
+        }
+       }
       }
+      
+      .list-sousmenu {
+        
+        animation : slide-leftmenu 0.7s ease-out;
+        margin-right: 28%;
+    } 
   }
 
   
@@ -67,4 +78,27 @@ span.button_explorer {
   .slide-left {
     -webkit-animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  /*.fa-w-16{
+    cursor:pointer;
+    width: 40px;
+  } */
+  path.heart {
+    fill: white;
+    stroke: black;
+    stroke-width: 25px;
+  }
+
+  /*input#coeur {
+    visibility: hidden;
+  }
+  */
+  input[type=checkbox]:checked + label {
+    .heart{
+      animation: heartchange 1.5s ease ;
+      fill:$color-secondary;
+      stroke: black;
+      stroke-width: 25px;
+    }
   }

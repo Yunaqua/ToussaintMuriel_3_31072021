@@ -80,7 +80,7 @@ span.button_explorer {
   font-weight: bold;
 }
 
-.list-menu:active .reserv-btn {
+.list-menu:hover .reserv-btn {
   background-color: #99E2D0;
   width: 25%;
   height: -webkit-fill-available;
@@ -91,7 +91,7 @@ span.button_explorer {
   right: -100px;
   position: absolute;
 }
-.list-menu:active .fa-check-circle {
+.list-menu:hover .reserv-btn--icon {
   background-color: #99E2D0;
   width: 15%;
   border-radius: 50%;
@@ -100,15 +100,44 @@ span.button_explorer {
   width: 80px;
   color: white;
 }
+.list-menu:hover .reserv-btn--icon:before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+}
+.list-menu:hover .list-sousmenu {
+  animation: slide-leftmenu 0.7s ease-out;
+  margin-right: 28%;
+}
 
-.rotate-center, .list-menu:active .fa-check-circle {
+.rotate-center, .list-menu:hover .reserv-btn--icon {
   -webkit-animation: rotate-center 0.6s ease-in-out both;
   animation: rotate-center 0.6s ease-in-out both;
 }
 
-.slide-left, .list-menu:active .reserv-btn {
+.slide-left, .list-menu:hover .reserv-btn {
   -webkit-animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/*.fa-w-16{
+  cursor:pointer;
+  width: 40px;
+} */
+path.heart {
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
+}
+
+/*input#coeur {
+  visibility: hidden;
+}
+*/
+input[type=checkbox]:checked + label .heart {
+  animation: heartchange 1.5s ease;
+  fill: #FF79DA;
+  stroke: black;
+  stroke-width: 25px;
 }
 
 /******************** Animation ******************/
@@ -166,16 +195,6 @@ span.button_explorer {
  * animation slide-left
  * ----------------------------------------
  */
-@-webkit-keyframes slide-left {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
 @keyframes slide-left {
   0% {
     -webkit-transform: translateX(0);
@@ -225,6 +244,14 @@ span.button_explorer {
   }
   100% {
     fill: #FF79DA;
+  }
+}
+@keyframes slide-leftmenu {
+  from {
+    margin-right: 0%;
+  }
+  to {
+    margin-right: 28%;
   }
 }
 /* @keyframes heartchange {
@@ -387,6 +414,10 @@ header a:before {
   content: "";
 }
 
+.reserv-btn--icon:before {
+  width: 15%;
+}
+
 /******************** List ******************/
 .list-menu {
   display: flex;
@@ -424,7 +455,7 @@ header a:before {
   width: 80%;
 }
 
-.list-menu1 {
+.list-sousmenu {
   flex: 1;
 }
 

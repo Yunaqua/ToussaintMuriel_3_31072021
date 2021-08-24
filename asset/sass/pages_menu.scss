@@ -148,7 +148,10 @@ h1{
       font-weight: 900;
       content: "\f060";
   }
-  
+  .reserv-btn--icon:before {
+    
+    width: 15%;
+}
   
   /******************** List ******************/
   
@@ -191,7 +194,7 @@ h1{
       
     }
   
-    .list-menu1 {
+    .list-sousmenu {
       flex:1;
   }
   
