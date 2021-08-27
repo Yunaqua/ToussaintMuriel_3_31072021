@@ -43,12 +43,7 @@ div {
 p,footer{
     font-size: 30px;
 }
-footer{
-   color: white;
-   background-color: #222;
-   padding: 3em;
 
-}
 
 /********************  Icon ********************/
 
@@ -58,12 +53,10 @@ footer{
   /* line-height: inherit; */
   margin-right: 1em;
   @include appear;
-}
-.list-footer div i {
-  padding-right: 2em;
-  height: 20px;
-  width: 20px;
-  font-size: 20px;
+  &:nth-child(1) { animation-delay: .5s }
+  &:nth-child(2) { animation-delay: 1s }
+  &:nth-child(3) { animation-delay: 1.5s }
+  &:nth-child(4) { animation-delay: 2s }
 }
 
 #ville p:before {
@@ -107,34 +100,26 @@ color: $color-primary;
    &:hover{
   background-color: #f5edff;
   }
+  &:nth-child(1) { animation-delay: .5s }
+  &:nth-child(2) { animation-delay: 1s }
+  &:nth-child(3) { animation-delay: 1.5s }
+  &:nth-child(4) { animation-delay: 2s }
 }
+
 
 .list_icon {
   display: flex;
   align-items: center;
   font-size: 45px;
   @include appear;
+  &:nth-child(1) { animation-delay: .5s }
+  &:nth-child(2) { animation-delay: 1s }
+  &:nth-child(3) { animation-delay: 1.5s }
+  &:nth-child(4) { animation-delay: 2s }
 }
 
-.list-footer{
-  
-  display: inline;
-  list-style-type: none;
-  div {
-    display: inline-flex;
-    align-items: center;
-    padding: 5px 0;
-  }
-}
 
-footer li {
-  padding-bottom: 5px;
-  &:hover {
-    cursor: pointer;
-    text-decoration: underline;
-    transform: scale(1.02);
-  }
-}
+
 
 
 
@@ -155,8 +140,8 @@ li.btn.button_fonction:before {
   border-radius: 50%;
   line-height: 40px;
   text-align: center;
-  position: absolute;
-  left: 2em;
+  position: relative;
+  left: -5em;
 }
 
 li.btn.button_fonction:nth-child(1):before {

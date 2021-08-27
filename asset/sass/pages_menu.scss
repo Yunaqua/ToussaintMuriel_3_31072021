@@ -66,12 +66,12 @@ h1{
     margin: auto;
   
   }
-  footer{
+ /* footer{
      color: white;
      background-color: #222;
      padding: 3em;
   
-  }
+  } */
   
   article {
       padding: 3em 0;
@@ -133,12 +133,12 @@ h1{
       line-height: inherit;
       /* padding-right: 10px; */
   }
-  .list-footer div i {
+  /*.list-footer div i {
       padding-right: 2em;
       height: 20px;
       width: 20px;
       font-size: 20px;
-  }
+  } */
   
   header a:before {
       font-family: "Font Awesome 5 Free";
@@ -157,18 +157,22 @@ h1{
   
   
   .list-menu {
+    opacity:0;
+    overflow:hidden;
     display: flex;
     background-color: white;
     border-radius: 25px;
     margin: 20px;
     padding: 15px;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: row;
     transition: transform 400ms;
-    align-items: center;
    @include black-shadow;
-    animation: apparition 0.5s ease-out;
+   @include child-animation;
+    animation: apparition 1.5s ease-out;
+    animation-fill-mode: forwards;
+    
     p{
       font-size: 2em;
       padding: 5px 10px;
@@ -178,26 +182,39 @@ h1{
       background-color:  #f5edff;
       cursor: pointer;
       transform: scale(1.02);
+      .reserv-btn{
+        margin-right: -1rem;
+        &--icon{
+        
+          background-color: $color-tertiaire;
+          width: 15%; 
+          border-radius: 50%;
+          font-size: 80px;
+          height: 80px;
+          width: 80px;
+          color:white;
+          @extend .rotate-center;
+          &:before{
+            content: "\f058";
+          font-family: "Font Awesome 5 Free";
+          }
+        }
       }
+    } /* hover*/
     &--nommenu {
       width: 80%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
-    /*&:active {
-      background-image: linear-gradient(to right, rgba(0,0,0,0) 80%, $color-tertiaire 20%);
-      transform-origin: right;
-      transform: scaleX(0.2);
-      transition: background-image 1000ms;
-      
-      
-    } */
+   
     
-      
-    }
+  }
   
     .list-sousmenu {
       flex:1;
   }
-  
+ /*  
   .list-footer {
       display: inline;
       list-style-type: none;
@@ -208,7 +225,7 @@ h1{
     }
   }
   
-  footer li {
+ footer li {
       padding-bottom: 5px;
       &:hover {
         cursor: pointer;
@@ -216,7 +233,7 @@ h1{
         transform: scale(1.02);
     }
   }
-  
+  */
  
   
   

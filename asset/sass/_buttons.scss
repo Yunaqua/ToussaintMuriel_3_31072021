@@ -2,6 +2,8 @@
 
 .btn:hover{
     cursor: pointer;
+    color: lighten($color-primary, 10%);
+      
     @include black-shadow;
     
   }
@@ -30,44 +32,17 @@ span.button_explorer {
       }
   }
 
-
+  .reserv-btn {
+    background-color: #99E2D0;
+    width: 15rem;
+    margin: -1rem -16rem -1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
   
-  .list-menu:hover{
-    .reserv-btn{
-      background-color: $color-tertiaire;
-      width: 25%;
-      height: -webkit-fill-available;
-      border-radius: 0 25px 25px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      right: -100px;
-      position: absolute;
-      @extend .slide-left;
-
-      &--icon{
-        
-        background-color: $color-tertiaire;
-        width: 15%; 
-        border-radius: 50%;
-        font-size: 80px;
-        height: 80px;
-        width: 80px;
-        color:white;
-        @extend .rotate-center;
-        &:before{
-          content: "\f058";
-        font-family: "Font Awesome 5 Free";
-        }
-       }
-      }
-      
-      .list-sousmenu {
-        
-        animation : slide-leftmenu 0.7s ease-out;
-        margin-right: 28%;
-    } 
-  }
+  
 
   
   .rotate-center {
@@ -80,20 +55,13 @@ span.button_explorer {
             animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   }
 
-  /*.fa-w-16{
-    cursor:pointer;
-    width: 40px;
-  } */
+
   path.heart {
     fill: white;
     stroke: black;
     stroke-width: 25px;
   }
 
-  /*input#coeur {
-    visibility: hidden;
-  }
-  */
   input[type=checkbox]:checked + label {
     .heart{
       animation: heartchange 1.5s ease ;
