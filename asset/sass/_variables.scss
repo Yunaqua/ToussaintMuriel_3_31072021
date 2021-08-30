@@ -8,7 +8,9 @@ $color-tertiaire: #99E2D0;
 
 $font-principale: "Shrikhand", serif; 
 $font-secondaire: "Roboto", serif; 
+$red: #d32f2f;
 
+$heart-size:65px;
 
 /******************** Mixins ******************/
 
@@ -18,7 +20,7 @@ $font-secondaire: "Roboto", serif;
   } 
 
 @mixin appear {
-  animation: apparition 1.5s ease-out;
+  animation: apparition 0.5s ease-out;
 }
   
   .btn_menu_info {
@@ -48,3 +50,11 @@ $font-secondaire: "Roboto", serif;
   &:nth-child(3) { animation-delay: 1.5s }
   &:nth-child(4) { animation-delay: 2s }
   } 
+
+
+
+ 
+
+ 
+ 
+

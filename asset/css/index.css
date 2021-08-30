@@ -132,19 +132,49 @@ span.button_explorer {
   animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-path.heart {
-  fill: white;
-  stroke: black;
-  stroke-width: 25px;
+.heart-stroke {
+  width: 65px;
+  height: 65px;
 }
 
-input[type=checkbox]:checked + label .heart {
-  animation: heartchange 1.5s ease;
-  fill: #FF79DA;
-  stroke: black;
-  stroke-width: 25px;
+.heart-lineart {
+  width: 65px;
+  height: 65px;
+  opacity: 0;
+}
+.heart-lineart:hover {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform-origin: center 60%;
+  animation: heart-apparition 0.5s ease-out forwards;
 }
 
+.heart-lineart, .heart-stroke {
+  position: absolute;
+}
+
+.coeur-animation {
+  position: absolute;
+  height: 5rem;
+  right: 10rem;
+}
+
+/* path.heart {
+   fill: white;
+   stroke: black;
+   stroke-width: 25px;
+ }
+
+ input[type=checkbox]:checked + label {
+   .heart{
+     animation: heartchange 1.5s ease ;
+     fill:$color-secondary;
+     stroke: black;
+     stroke-width: 25px;
+   }
+ }
+ */
 /******************** Animation ******************/
 .progress {
   background-color: #99E2D0;
@@ -162,6 +192,15 @@ input[type=checkbox]:checked + label .heart {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@keyframes heart-apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes FadeIn {
@@ -302,7 +341,7 @@ p, footer {
   width: 45px;
   /* line-height: inherit; */
   margin-right: 1em;
-  animation: apparition 1.5s ease-out;
+  animation: apparition 0.5s ease-out;
 }
 .list_icon i:nth-child(1) {
   animation-delay: 0.5s;
@@ -348,7 +387,7 @@ p, footer {
   padding-left: 4em;
   display: inline-flex;
   align-items: center;
-  animation: apparition 1.5s ease-out;
+  animation: apparition 0.5s ease-out;
 }
 .button_fonction:hover {
   background-color: #f5edff;
@@ -370,7 +409,7 @@ p, footer {
   display: flex;
   align-items: center;
   font-size: 45px;
-  animation: apparition 1.5s ease-out;
+  animation: apparition 0.5s ease-out;
 }
 .list_icon:nth-child(1) {
   animation-delay: 0.5s;

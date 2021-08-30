@@ -132,19 +132,49 @@ span.button_explorer {
   animation: slide-left 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-path.heart {
-  fill: white;
-  stroke: black;
-  stroke-width: 25px;
+.heart-stroke {
+  width: 65px;
+  height: 65px;
 }
 
-input[type=checkbox]:checked + label .heart {
-  animation: heartchange 1.5s ease;
-  fill: #FF79DA;
-  stroke: black;
-  stroke-width: 25px;
+.heart-lineart {
+  width: 65px;
+  height: 65px;
+  opacity: 0;
+}
+.heart-lineart:hover {
+  opacity: 0;
+  transform: scale(0);
+  transition: transform 0.2s linear, opacity 0.2s linear;
+  transform-origin: center 60%;
+  animation: heart-apparition 0.5s ease-out forwards;
 }
 
+.heart-lineart, .heart-stroke {
+  position: absolute;
+}
+
+.coeur-animation {
+  position: absolute;
+  height: 5rem;
+  right: 10rem;
+}
+
+/* path.heart {
+   fill: white;
+   stroke: black;
+   stroke-width: 25px;
+ }
+
+ input[type=checkbox]:checked + label {
+   .heart{
+     animation: heartchange 1.5s ease ;
+     fill:$color-secondary;
+     stroke: black;
+     stroke-width: 25px;
+   }
+ }
+ */
 /******************** Animation ******************/
 .progress {
   background-color: #99E2D0;
@@ -162,6 +192,15 @@ input[type=checkbox]:checked + label .heart {
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+@keyframes heart-apparition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 @keyframes FadeIn {
@@ -365,16 +404,17 @@ article {
   width: 100%;
   text-align: center;
   align-items: center;
+  /*
+  &:after {
+      font-family: "Font Awesome 5 Free";
+      content: "\f004";
+      padding: 0 2em;
+      font-size: 3em;
+  } */
 }
 .titremenu h2 {
   text-align: left;
   text-indent: 1em;
-}
-.titremenu:after {
-  font-family: "Font Awesome 5 Free";
-  content: "";
-  padding: 0 2em;
-  font-size: 3em;
 }
 
 #bloc--restaurant {
@@ -429,7 +469,7 @@ header a:before {
   transition: transform 400ms;
   box-shadow: 5px 0.2em 0.8em #dcdcdc;
   transform: scale(1.02);
-  animation: apparition 1.5s ease-out;
+  animation: apparition 0.7s ease-out;
   animation-fill-mode: forwards;
   /* hover*/
 }
@@ -481,26 +521,6 @@ header a:before {
   flex: 1;
 }
 
-/*  
- .list-footer {
-     display: inline;
-     list-style-type: none;
-     & div {
-       display: inline-flex;
-       align-items: center;
-       padding: 5px 0;
-   }
- }
-
-footer li {
-     padding-bottom: 5px;
-     &:hover {
-       cursor: pointer;
-       text-decoration: underline;
-       transform: scale(1.02);
-   }
- }
- */
 /****************** Card ******************/
 .card {
   background-size: cover !important;
@@ -536,6 +556,11 @@ footer li {
 /******************** Bouton ******************/
 .btn:hover {
   cursor: pointer;
+}
+
+.fa-w-16 {
+  cursor: pointer;
+  width: 70px;
 }
 
 /*# sourceMappingURL=stylemenu.css.map */

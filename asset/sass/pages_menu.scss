@@ -105,13 +105,13 @@ h1{
       text-indent: 1em;
       }
       
-  
+      /*
       &:after {
           font-family: "Font Awesome 5 Free";
           content: "\f004";
           padding: 0 2em;
           font-size: 3em;
-      }
+      } */
   
 }
   
@@ -170,7 +170,7 @@ h1{
     transition: transform 400ms;
    @include black-shadow;
    @include child-animation;
-    animation: apparition 1.5s ease-out;
+    animation: apparition 0.7s ease-out;
     animation-fill-mode: forwards;
     
     p{
@@ -214,27 +214,6 @@ h1{
     .list-sousmenu {
       flex:1;
   }
- /*  
-  .list-footer {
-      display: inline;
-      list-style-type: none;
-      & div {
-        display: inline-flex;
-        align-items: center;
-        padding: 5px 0;
-    }
-  }
-  
- footer li {
-      padding-bottom: 5px;
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-        transform: scale(1.02);
-    }
-  }
-  */
- 
   
   
   
@@ -286,3 +265,6 @@ h1{
   .btn:hover{
     cursor: pointer;
   }
+
+
+  @include heart-size ($width:70px);
