@@ -1,12 +1,9 @@
 /******************** Animation ******************/
 
 
-.progress {
-        background-color: $color-tertiaire;
-        transform-origin: right;
-        transform: scaleX(0);
-        transition: transform 1000ms;
-    
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+          animation: rotate-center 0.6s ease-in-out both;
 }
 
 
@@ -23,36 +20,39 @@
     }
      
   }
-  @keyframes heart-apparition {
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-      transform: scale(1);
-    }
-     
-  }
-  @keyframes FadeIn { 
+  /* coeur colorer favori */
+
+  @keyframes heart-apparition  { 
   0% {
     opacity: 0;
     transform: scale(.1);
   }
 
-  85% {
+  75% {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.3);
   }
   100% {
+    opacity:1;
+    transform: scale(0.93);
+  }
+}
+@keyframes bounce-card  { 
+  0% {
+    transform: scale(0.8);
+  }
+
+  75% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity:1;
     transform: scale(1);
   }
 }
 
-/**
- * ----------------------------------------
- * animation rotate-center
- * ----------------------------------------
- */
+/* Icone croix du menu */
 @-webkit-keyframes rotate-center {
     0% {
       -webkit-transform: rotate(0);
@@ -66,65 +66,6 @@
 
   
  
-  @keyframes slide-left {
-    0% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-    }
-    100% {
-      -webkit-transform: translateX(-100px);
-              transform: translateX(-100px);
-    }
-  }
-  
-
-  @keyframes burst{
-    0%,10%{
-        transform: scale(1);
-        opacity: .5;
-        color:lavender;
-    }
-    45%{
-        transform: scale(.2) rotate(30deg);
-        opacity: .75;
-    }
-    50%{
-        transform: scale(2) rotate(-37.5deg);
-        opacity: 1;
-        color: red;
-        text-shadow: 2px 2px 6px rgba(235, 9, 9, 0.5);
-    }
-    90%,95%{
-        transform: scale(1) rotate(10deg);
-        text-shadow: none;
-    }
-    100% {
-        transform: rotate(-2.5deg);
-    }
-
-  }
-
-  @keyframes heartchange {
-    0%,10%{
-      opacity: .5;
-      fill:white;
-  }
-  45%{
-      fill: $color-primary;
-      opacity: .75;
-  }
-  50%{
-      opacity: 1;
-      fill:red;
-     
-  }
-  90%{
-  }
-  100% {
-    
-    fill:$color-secondary;
-   } 
-  } 
 
  @keyframes slide-leftmenu {
     from{

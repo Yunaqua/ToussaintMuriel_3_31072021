@@ -16,11 +16,11 @@ $heart-size:65px;
 
 @mixin black-shadow ($color:#dcdcdc) {
     box-shadow: 5px 0.2em 0.8em $color;
-    transform: scale(1.02);
+    transform: scale(1.1);
   } 
 
 @mixin appear {
-  animation: apparition 0.5s ease-out;
+  animation: apparition 0.5s ease-out forwards;
 }
   
   .btn_menu_info {
@@ -45,10 +45,10 @@ $heart-size:65px;
 
   @mixin child-animation {
     
-  &:nth-child(1) { animation-delay: .5s }
-  &:nth-child(2) { animation-delay: 1s }
-  &:nth-child(3) { animation-delay: 1.5s }
-  &:nth-child(4) { animation-delay: 2s }
+  &:nth-child(1) { animation-delay: .3s }
+  &:nth-child(2) { animation-delay: 0.7s }
+  &:nth-child(3) { animation-delay: 1.2s }
+  &:nth-child(4) { animation-delay: 1.7s }
   } 
 
 

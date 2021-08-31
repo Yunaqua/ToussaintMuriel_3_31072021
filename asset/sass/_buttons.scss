@@ -2,9 +2,12 @@
 
 .btn:hover{
     cursor: pointer;
-    color: lighten($color-primary, 10%);
-      
+    /*color: lighten($color-primary, 10%); */
     @include black-shadow;
+    h3:hover{
+      color: black;
+    }
+    
     
   }
   
@@ -14,6 +17,9 @@ span.button_explorer {
     padding: 20px 30px;
     border-radius: 50px;
     font-size: 35px;
+    &:hover{
+      filter: brightness(1.35);
+    }
   }
 
 
@@ -42,18 +48,7 @@ span.button_explorer {
     transition-duration: 0.5s;
 }
   
-  
 
-  
-  .rotate-center {
-    -webkit-animation: rotate-center 0.6s ease-in-out both;
-            animation: rotate-center 0.6s ease-in-out both;
-  }
-
-  .slide-left {
-    -webkit-animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-            animation: slide-left 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  }
 
   .heart-stroke{
     width:$heart-size;
@@ -79,7 +74,7 @@ span.button_explorer {
   .coeur-animation {
     position: absolute;
     height: 5rem;
-    right: 10rem;
+    right: 7rem;
 }
  /* path.heart {
     fill: white;
