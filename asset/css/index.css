@@ -59,10 +59,10 @@ footer {
   background-color: #222;
   padding: 3em;
 }
-footerli {
+footer li {
   padding-bottom: 5px;
 }
-footerli:hover {
+footer li:hover {
   cursor: pointer;
   text-decoration: underline;
   transform: scale(1.02);
@@ -88,7 +88,7 @@ footerli:hover {
 .btn:hover {
   cursor: pointer;
   /*color: lighten($color-primary, 10%); */
-  box-shadow: 5px 0.2em 0.8em #dcdcdc;
+  box-shadow: 5px 0.2em 0.8em #6b6464;
   transform: scale(1.1);
 }
 .btn:hover h3:hover {

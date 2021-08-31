@@ -14,7 +14,7 @@ $heart-size:65px;
 
 /******************** Mixins ******************/
 
-@mixin black-shadow ($color:#dcdcdc) {
+@mixin black-shadow ($color:#6b6464) {
     box-shadow: 5px 0.2em 0.8em $color;
     transform: scale(1.1);
   } 
