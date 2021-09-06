@@ -2,7 +2,6 @@
 
 .btn:hover{
     cursor: pointer;
-    /*color: lighten($color-primary, 10%); */
     @include black-shadow;
     h3:hover{
       color: black;

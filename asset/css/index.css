@@ -87,7 +87,6 @@ footer li:hover {
 /******************** Bouton ******************/
 .btn:hover {
   cursor: pointer;
-  /*color: lighten($color-primary, 10%); */
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transform: scale(1.1);
 }
@@ -216,7 +215,7 @@ span.button_explorer:hover {
     transform: scale(1);
   }
 }
-/* Icone croix du menu */
+/* Icone V du menu */
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -235,16 +234,6 @@ span.button_explorer:hover {
     margin-right: 28%;
   }
 }
-/* @keyframes heartchange {
-   from{
-     opacity: 0;
-     fill: $color-primary;
-   }
-   to{
-     opacity: 1;
-     fill:$color-secondary;
-   }
- } */
 /******************** Main disposition ******************/
 body {
   text-align: center;
@@ -319,7 +308,7 @@ p, footer {
   background-color: #f6f6f6;
   border-radius: 30px;
   margin: 10px;
-  padding: 40px;
+  padding: 15px 40px;
   padding-left: 4em;
   display: inline-flex;
   align-items: center;
@@ -342,9 +331,6 @@ p, footer {
 }
 .button_fonction:nth-child(3) {
   animation-delay: 1.5s;
-}
-.button_fonction:nth-child(4) {
-  animation-delay: 2s;
 }
 
 .list_icon {
@@ -375,16 +361,17 @@ p, footer {
 }
 
 li.btn.button_fonction:before {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 55px;
   display: block;
   color: white;
   background-color: #9356DC;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: 55px;
+  font-size: 1.3em;
   text-align: center;
   position: relative;
-  left: -5em;
+  left: -4em;
 }
 
 li.btn.button_fonction:nth-child(1):before {
@@ -432,6 +419,9 @@ li.btn.button_fonction:nth-child(3):before {
   background-color: #99e2d0;
   color: #008766;
   padding: 10px 20px;
+}
+.textimage__nouveaute h4 {
+  color: #2c9c81;
 }
 
 /******************** Conteneur ******************/

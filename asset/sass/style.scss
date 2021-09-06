@@ -1,7 +1,7 @@
 @import "variables";
 @import "base";
 @import "buttons";
-@import "../sass/keyframes";
+@import "keyframes";
 
 
 /******************** Main disposition ******************/
@@ -82,7 +82,7 @@ color: $color-primary;
   background-color: $color-primaryback;
   border-radius: 30px;
   margin: 10px;
-  padding: 40px;
+  padding: 15px 40px;
   padding-left: 4em;
   display: inline-flex;
   align-items: center;
@@ -99,7 +99,6 @@ color: $color-primary;
   &:nth-child(1) { animation-delay: .5s }
   &:nth-child(2) { animation-delay: 1s }
   &:nth-child(3) { animation-delay: 1.5s }
-  &:nth-child(4) { animation-delay: 2s }
 }
 
 
@@ -130,16 +129,17 @@ color: $color-primary;
 
 
 li.btn.button_fonction:before {
-  width: 40px;
-  height: 40px;
+  width: $number-size;
+  height: $number-size;
   display: block;
   color: white;
   background-color: $color-primary;
   border-radius: 50%;
-  line-height: 40px;
+  line-height: $number-size;
+  font-size:1.3em;
   text-align: center;
   position: relative;
-  left: -5em;
+  left: -4em;
 }
 
 li.btn.button_fonction:nth-child(1):before {
@@ -188,12 +188,13 @@ content: "3";
 position: absolute;
 top: 20px;
 right: 20px;
-background-color: #99e2d0;
+background-color: $color-new;
 color: #008766;
 padding: 10px 20px ;
+  h4{
+    @include new-text($color-new);
+  }
 }
-
-
 
 /******************** Conteneur ******************/
 

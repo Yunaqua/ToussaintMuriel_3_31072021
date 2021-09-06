@@ -66,12 +66,6 @@ h1{
     margin: auto;
   
   }
- /* footer{
-     color: white;
-     background-color: #222;
-     padding: 3em;
-  
-  } */
   
   article {
       padding: 3em 0;
@@ -105,14 +99,6 @@ h1{
       text-indent: 1em;
       }
       
-      /*
-      &:after {
-          font-family: "Font Awesome 5 Free";
-          content: "\f004";
-          padding: 0 2em;
-          font-size: 3em;
-      } */
-  
 }
   
   #bloc--restaurant{
@@ -133,12 +119,6 @@ h1{
       line-height: inherit;
       /* padding-right: 10px; */
   }
-  /*.list-footer div i {
-      padding-right: 2em;
-      height: 20px;
-      width: 20px;
-      font-size: 20px;
-  } */
   
   header a:before {
       font-family: "Font Awesome 5 Free";
@@ -167,10 +147,11 @@ h1{
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
+    position:relative;
     transition: transform 400ms;
    @include black-shadow;
    @include child-animation;
-    animation: apparition 0.7s ease-out;
+    animation: apparition 0.7s cubic-bezier(.43,0,.82,1);
     animation-fill-mode: forwards;
     
     p{
@@ -215,7 +196,21 @@ h1{
       flex:1;
   }
   
-  
+  @media (min-width: 1000px){
+    .list-menu{
+      &:hover{
+        .reserv-btn{
+          width: 7rem;
+          &--icon{
+            font-size: 50px;
+            height: 50px;
+            width: 50px;
+          }
+        }
+
+      } /* hover */
+    }
+  }
   
   /****************** Card ******************/
   
@@ -253,8 +248,6 @@ h1{
   }
 
   
-  
-  /* Add some padding inside the card container */
   .container {
     padding: 5px 0;
   }

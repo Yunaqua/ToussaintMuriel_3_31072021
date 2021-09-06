@@ -87,7 +87,6 @@ footer li:hover {
 /******************** Bouton ******************/
 .btn:hover {
   cursor: pointer;
-  /*color: lighten($color-primary, 10%); */
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transform: scale(1.1);
 }
@@ -216,7 +215,7 @@ span.button_explorer:hover {
     transform: scale(1);
   }
 }
-/* Icone croix du menu */
+/* Icone V du menu */
 @-webkit-keyframes rotate-center {
   0% {
     -webkit-transform: rotate(0);
@@ -235,16 +234,6 @@ span.button_explorer:hover {
     margin-right: 28%;
   }
 }
-/* @keyframes heartchange {
-   from{
-     opacity: 0;
-     fill: $color-primary;
-   }
-   to{
-     opacity: 1;
-     fill:$color-secondary;
-   }
- } */
 html, body {
   height: 100%;
   min-height: 100%;
@@ -316,12 +305,6 @@ body {
   margin: auto;
 }
 
-/* footer{
-    color: white;
-    background-color: #222;
-    padding: 3em;
-
- } */
 article {
   padding: 3em 0;
   animation: apparition 2s ease-out;
@@ -349,13 +332,6 @@ article {
   width: 100%;
   text-align: center;
   align-items: center;
-  /*
-  &:after {
-      font-family: "Font Awesome 5 Free";
-      content: "\f004";
-      padding: 0 2em;
-      font-size: 3em;
-  } */
 }
 .titremenu h2 {
   text-align: left;
@@ -380,12 +356,6 @@ article {
   /* padding-right: 10px; */
 }
 
-/*.list-footer div i {
-    padding-right: 2em;
-    height: 20px;
-    width: 20px;
-    font-size: 20px;
-} */
 header a:before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
@@ -411,24 +381,25 @@ header a:before {
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-direction: row;
+  position: relative;
   transition: transform 400ms;
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transform: scale(1.1);
-  animation: apparition 0.7s ease-out;
+  animation: apparition 0.7s cubic-bezier(0.43, 0, 0.82, 1);
   animation-fill-mode: forwards;
   /* hover*/
 }
 .list-menu:nth-child(1) {
   animation-delay: 0.3s;
+  z-index: 9;
 }
 .list-menu:nth-child(2) {
-  animation-delay: 0.7s;
+  animation-delay: 0.6s;
+  z-index: 8;
 }
 .list-menu:nth-child(3) {
-  animation-delay: 1.2s;
-}
-.list-menu:nth-child(4) {
-  animation-delay: 1.7s;
+  animation-delay: 0.95s;
+  z-index: 7;
 }
 .list-menu p {
   font-size: 2em;
@@ -466,6 +437,19 @@ header a:before {
   flex: 1;
 }
 
+@media (min-width: 1000px) {
+  .list-menu {
+    /* hover */
+  }
+  .list-menu:hover .reserv-btn {
+    width: 7rem;
+  }
+  .list-menu:hover .reserv-btn--icon {
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+  }
+}
 /****************** Card ******************/
 .card {
   background-size: cover !important;
@@ -493,7 +477,6 @@ header a:before {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add some padding inside the card container */
 .container {
   padding: 5px 0;
 }
