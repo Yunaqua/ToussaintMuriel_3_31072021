@@ -401,6 +401,10 @@ header a:before {
   animation-delay: 0.95s;
   z-index: 7;
 }
+.list-menu:nth-child(4) {
+  animation-delay: 1.35s;
+  z-index: 6;
+}
 .list-menu p {
   font-size: 2em;
   padding: 5px 10px;
