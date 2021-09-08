@@ -6,13 +6,17 @@
 	/******************** Titre ******************/
 
  h1 {
-    font-size: 2.7em;
+    font-size: 2.2em;
 	}
   h2{
-    font-size:3em;
+    font-size:2em;
+  }
+  h3{
+    font-size:25px;
   }
   h4{
     font-size:2em;
+    margin:15px 0;
   }
 
   .bloc_reservation p {
@@ -20,7 +24,7 @@
 	}
 
   .list-menu p,.description--nommenu p {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 	/******************** Main disposition ******************/
 	
@@ -49,7 +53,7 @@
 	.bloc_fonctionnement ul {
     
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 	}
  /******************** Icon ******************/
 
@@ -61,7 +65,9 @@
     position: relative;
     left: -5em;
 	}
-
+.list_icon{
+  font-size: 35px;
+}
 
 .list-footer {
   display: flex;
@@ -76,5 +82,9 @@
   width: 15%;
 }
 
+span.button_explorer{
+  font-size: 20px;
 }
+
+}/*fin mediaquery*/
 
