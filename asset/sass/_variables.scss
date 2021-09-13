@@ -22,10 +22,7 @@ $number-size:55px;
 @mixin black-shadow ($color:#6b6464) {
     box-shadow: 5px 0.2em 0.8em $color;
     transition: transform 400ms;
-    div:hover{
-      transform: scale(1.02);
-    }
-    
+  
   } 
 
 @mixin appear {

@@ -147,7 +147,6 @@ h1{
     flex-wrap: nowrap;
     flex-direction: row;
     position:relative;
-    transition: transform 400ms;
     transform: scale(1);
    @include black-shadow;
    @include child-animation;

@@ -97,9 +97,6 @@ footer li:hover {
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
 }
-.btn:hover div:hover {
-  transform: scale(1.02);
-}
 .btn:hover h3:hover {
   color: black;
 }
@@ -406,15 +403,11 @@ header a:before {
   flex-wrap: nowrap;
   flex-direction: row;
   position: relative;
-  transition: transform 400ms;
   transform: scale(1);
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
   animation: apparition 0.4s cubic-bezier(0.43, 0, 0.82, 1);
   /* hover*/
-}
-.list-menu div:hover {
-  transform: scale(1.02);
 }
 .list-menu:nth-child(1) {
   animation-delay: 0.3s;

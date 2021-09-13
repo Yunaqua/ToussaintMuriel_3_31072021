@@ -97,9 +97,6 @@ footer li:hover {
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
 }
-.btn:hover div:hover {
-  transform: scale(1.02);
-}
 .btn:hover h3:hover {
   color: black;
 }
@@ -466,9 +463,6 @@ li.btn.button_fonction:nth-child(3):before {
 .contour-card:hover {
   box-shadow: 5px 0.2em 0.8em #9356DC;
   transition: transform 400ms;
-}
-.contour-card:hover div:hover {
-  transform: scale(1.02);
 }
 
 /* Add some padding inside the card container */
