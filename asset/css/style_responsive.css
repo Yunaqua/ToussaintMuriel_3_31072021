@@ -50,6 +50,9 @@
 	.card{
 		height: 350px;
 	}
+  .list-menu:hover{
+    cursor: pointer;
+  }
 	.bloc_fonctionnement ul {
     
     flex-direction: row;

@@ -52,6 +52,13 @@ h4 {
   font-weight: bold;
 }
 
+a > h4 {
+  color: black;
+}
+a :hover {
+  text-decoration: underline #99E2D0;
+}
+
 /******************** Footer ******************/
 footer {
   font-size: 30px;
@@ -88,7 +95,10 @@ footer li:hover {
 .btn:hover {
   cursor: pointer;
   box-shadow: 5px 0.2em 0.8em #6b6464;
-  transform: scale(1.1);
+  transition: transform 400ms;
+}
+.btn:hover div:hover {
+  transform: scale(1.02);
 }
 .btn:hover h3:hover {
   color: black;
@@ -178,15 +188,30 @@ span.button_explorer:hover {
 
 /******************** Keyframes ******************/
 @keyframes apparition {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
+/*
+  @keyframes apparition {
+    0%{
+      transform: translateY(-100px);
+    }
+    50%{
+      visibility: visible;
+    }
+    100%{
+      visibility: visible;
+      transform: translateY(0px);
+
+    }
+
+  } */
 /* coeur colorer favori */
 @keyframes heart-apparition {
   0% {
@@ -371,7 +396,6 @@ header a:before {
 
 /******************** List ******************/
 .list-menu {
-  opacity: 0;
   overflow: hidden;
   display: flex;
   background-color: white;
@@ -383,11 +407,14 @@ header a:before {
   flex-direction: row;
   position: relative;
   transition: transform 400ms;
+  transform: scale(1);
   box-shadow: 5px 0.2em 0.8em #6b6464;
-  transform: scale(1.1);
-  animation: apparition 0.7s cubic-bezier(0.43, 0, 0.82, 1);
-  animation-fill-mode: forwards;
+  transition: transform 400ms;
+  animation: apparition 0.4s cubic-bezier(0.43, 0, 0.82, 1);
   /* hover*/
+}
+.list-menu div:hover {
+  transform: scale(1.02);
 }
 .list-menu:nth-child(1) {
   animation-delay: 0.3s;
@@ -411,7 +438,6 @@ header a:before {
 }
 .list-menu:hover {
   background-color: #f5edff;
-  cursor: pointer;
   transform: scale(1.02);
 }
 .list-menu:hover .reserv-btn {

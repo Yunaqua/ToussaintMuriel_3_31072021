@@ -37,7 +37,16 @@ h2, footer{
      font-size: 2.5rem;
      font-weight: bold;
   }
-
+a{
+   >h4{
+      color:black;
+   }
+   
+   :hover{
+      text-decoration: underline $color-tertiaire;
+   }
+   
+}
 
   /******************** Footer ******************/
 

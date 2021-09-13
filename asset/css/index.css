@@ -52,6 +52,13 @@ h4 {
   font-weight: bold;
 }
 
+a > h4 {
+  color: black;
+}
+a :hover {
+  text-decoration: underline #99E2D0;
+}
+
 /******************** Footer ******************/
 footer {
   font-size: 30px;
@@ -88,7 +95,10 @@ footer li:hover {
 .btn:hover {
   cursor: pointer;
   box-shadow: 5px 0.2em 0.8em #6b6464;
-  transform: scale(1.1);
+  transition: transform 400ms;
+}
+.btn:hover div:hover {
+  transform: scale(1.02);
 }
 .btn:hover h3:hover {
   color: black;
@@ -178,15 +188,30 @@ span.button_explorer:hover {
 
 /******************** Keyframes ******************/
 @keyframes apparition {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(-100px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
+/*
+  @keyframes apparition {
+    0%{
+      transform: translateY(-100px);
+    }
+    50%{
+      visibility: visible;
+    }
+    100%{
+      visibility: visible;
+      transform: translateY(0px);
+
+    }
+
+  } */
 /* coeur colorer favori */
 @keyframes heart-apparition {
   0% {
@@ -440,7 +465,10 @@ li.btn.button_fonction:nth-child(3):before {
 }
 .contour-card:hover {
   box-shadow: 5px 0.2em 0.8em #9356DC;
-  transform: scale(1.1);
+  transition: transform 400ms;
+}
+.contour-card:hover div:hover {
+  transform: scale(1.02);
 }
 
 /* Add some padding inside the card container */

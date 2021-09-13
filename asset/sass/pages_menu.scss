@@ -137,7 +137,6 @@ h1{
   
   
   .list-menu {
-    opacity:0;
     overflow:hidden;
     display: flex;
     background-color: white;
@@ -149,10 +148,10 @@ h1{
     flex-direction: row;
     position:relative;
     transition: transform 400ms;
+    transform: scale(1);
    @include black-shadow;
    @include child-animation;
-    animation: apparition 0.7s cubic-bezier(.43,0,.82,1);
-    animation-fill-mode: forwards;
+    animation: apparition 0.4s cubic-bezier(.43,0,.82,1);
     
     p{
       font-size: 2em;
@@ -161,7 +160,6 @@ h1{
     }
     &:hover {
       background-color:  #f5edff;
-      cursor: pointer;
       transform: scale(1.02);
       .reserv-btn{
         margin-right: -1rem;
