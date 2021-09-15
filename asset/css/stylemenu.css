@@ -96,12 +96,14 @@ footer li:hover {
   cursor: pointer;
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
+  transform: scale(1.02);
 }
 .btn:hover h3:hover {
   color: black;
 }
 
 span.button_explorer {
+  display: inline-block;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
   padding: 20px 30px;
@@ -406,6 +408,7 @@ header a:before {
   transform: scale(1);
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
+  transform: scale(1.02);
   animation: apparition 0.4s cubic-bezier(0.43, 0, 0.82, 1);
   /* hover*/
 }
