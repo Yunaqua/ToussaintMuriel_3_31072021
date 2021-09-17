@@ -164,21 +164,6 @@ span.button_explorer:hover {
   right: 7rem;
 }
 
-/* path.heart {
-   fill: white;
-   stroke: black;
-   stroke-width: 25px;
- }
-
- input[type=checkbox]:checked + label {
-   .heart{
-     animation: heartchange 1.5s ease ;
-     fill:$color-secondary;
-     stroke: black;
-     stroke-width: 25px;
-   }
- }
- */
 /******************** Animation ******************/
 .rotate-center, .list-menu:hover .reserv-btn--icon {
   -webkit-animation: rotate-center 0.6s ease-in-out both;
@@ -196,21 +181,6 @@ span.button_explorer:hover {
     transform: translateY(0px);
   }
 }
-/*
-  @keyframes apparition {
-    0%{
-      transform: translateY(-100px);
-    }
-    50%{
-      visibility: visible;
-    }
-    100%{
-      visibility: visible;
-      transform: translateY(0px);
-
-    }
-
-  } */
 /* coeur colorer favori */
 @keyframes heart-apparition {
   0% {

@@ -1,7 +1,8 @@
-@import "variables";
-@import "base";
-@import "buttons";
-@import "keyframes";
+@import "variables/variables";
+@import "mixins/mixins";
+@import "base/base";
+@import "buttons/buttons";
+@import "animations/animations";
 
 
 /******************** Main disposition ******************/
@@ -50,7 +51,6 @@ p,footer{
 .list_icon i {
   height: 45px;
   width: 45px;
-  /* line-height: inherit; */
   margin-right: 1em;
   @include appear;
   &:nth-child(1) { animation-delay: .5s }
@@ -64,7 +64,6 @@ p,footer{
   content: "\f3c5";
   display: inline-block;
   padding-right: 1em;
-  /* vertical-align: middle; */
   font-weight: 900;
 }
 
@@ -117,9 +116,6 @@ color: $color-primary;
 
 
 
-
-
-
 .bloc_fonctionnement ul{
   display: flex;
   padding: 20px 40px;
@@ -154,7 +150,7 @@ content: "3";
 
 /****************** Card ******************/
 
-.card {
+.card--image {
 
   background-size: cover!important;
   height: 400px;
@@ -166,7 +162,7 @@ content: "3";
     }
 }
 
-.description {
+.card--description {
   padding: 10px 20px;
     display: flex;
     width: 100%;
@@ -174,7 +170,7 @@ content: "3";
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  &--nommenu {
+    .description--nommenu {
     width: 80%;
   }
   
@@ -198,7 +194,7 @@ padding: 10px 20px ;
 
 /******************** Conteneur ******************/
 
-.contour-card{
+.card{
     
   background-color: #FFFFFF;
   border-radius: 20px;
@@ -217,8 +213,6 @@ padding: 10px 20px ;
     }
 }
 
-
-/* Add some padding inside the card container */
 .container {
 padding: 5px 0;
 }

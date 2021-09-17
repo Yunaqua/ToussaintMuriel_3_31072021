@@ -44,10 +44,10 @@
  
 
   /******************** Card ******************/
-  .contour-card{
+  .card{
 	width: 45%;
 	}
-	.card{
+	.card--image{
 		height: 350px;
 	}
   .list-menu:hover{
