@@ -365,6 +365,7 @@ header a:before {
 
 /******************** List ******************/
 .list-menu {
+  opacity: 0;
   overflow: hidden;
   display: flex;
   background-color: white;
@@ -376,11 +377,10 @@ header a:before {
   flex-direction: row;
   position: relative;
   transform: scale(1);
+  animation: apparition 0.4s cubic-bezier(0.43, 0, 0.82, 1) forwards;
   box-shadow: 5px 0.2em 0.8em #6b6464;
   transition: transform 400ms;
   transform: scale(1.02);
-  opacity: 0;
-  animation: apparition 0.4s cubic-bezier(0.43, 0, 0.82, 1) forwards;
   /* hover*/
 }
 .list-menu:nth-child(1) {

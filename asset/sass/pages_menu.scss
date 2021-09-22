@@ -138,6 +138,7 @@ h1{
   
   
   .list-menu {
+    opacity:0;
     overflow:hidden;
     display: flex;
     background-color: white;
@@ -149,11 +150,9 @@ h1{
     flex-direction: row;
     position:relative;
     transform: scale(1);
-   @include black-shadow;
-   @include child-animation;
-    opacity:0;
     animation: apparition 0.4s cubic-bezier(.43,0,.82,1) forwards;
-    
+    @include black-shadow;
+   @include child-animation;
     p{
       font-size: 2em;
       padding: 5px 10px;
